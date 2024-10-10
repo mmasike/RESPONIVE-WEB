@@ -71,11 +71,11 @@ nav {
 }
 .intro-text p {
 	margin-top: 5px;
-	font-size: 23px;
+	font-size: 20px;
 	color: #585772;
 }
 .cta {
-	padding: 20px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
 }
 .cta-select {
 	border: 2px solid #e5546d;
@@ -214,10 +214,10 @@ nav {
 }
 /*products display*/
 .best-selling {
-	height: 50vh;
+	height: 55vh;
 }
 .best-selling .top h1 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	padding: 3rem 0 1.5rem 6rem;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -239,7 +239,12 @@ nav {
 	width: 80%;
 }
 @media screen and (max-width: 1024px) {
-	grid-template-columns: repeat(3, 1fr);
+	.best-selling{
+		height: 85vh;
+	}
+	.best-selling .collage {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 @media screen and (max-width: 320px), (max-width: 360px) {
 	.best-selling {
@@ -285,29 +290,32 @@ nav {
 }
 .overlay {
 	/* From https://css.glass */
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(14, 14, 14, 0.786);
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(2px);
 	-webkit-backdrop-filter: blur(5px);
 	border: 1px solid rgba(255, 255, 255, 0.3);
-	height: 15vh;
+	height: 20vh;
 	width: 60%;
 	position: relative;
 	top: 75%;
 	left: 18%;
 }
 .overlay h1 {
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: 400;
 	font-family: "Poppins", sans-serif;
+	text-transform: uppercase;
 	margin-bottom: 20px;
 	letter-spacing: 3px;
+	color: white;
 }
 .overlay button {
-	border: 2px solid #e5546d;
-	background: transparent;
-	color: #e5546d;
+	background-color: #e5546d;
+	color: white;
+	border: none;
+	cursor: pointer;
 	width: 130px;
 	height: 40px;
 	cursor: pointer;
@@ -353,7 +361,7 @@ nav {
 		margin-top: 0;
 	}
 	.overlay {
-		top: 15.2rem;
+		top: 20.5rem;
 		left: 5%;
 		height: 16vh;
 	}
@@ -368,7 +376,7 @@ nav {
 	}
 }
 /* One show(product)*/
-.one-show{
+.one-show {
 	display: flex;
 	width: 87%;
 	height: 60vh;
@@ -376,83 +384,96 @@ nav {
 	border: 1px solid rgba(0, 0, 0, 0.194);
 	border-radius: 10px;
 }
-.one-img{
+.one-img {
 	flex: 1;
 	background: url(./img/Perfume_5.jpeg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.buy-info{
+.buy-info {
 	flex: 1;
 }
-.buy-info h1{
+.buy-info h1 {
 	margin: 45px 0 0 15px;
-	font-size: 35px;
+	font-size: 26px;
 	letter-spacing: 2px;
 }
-.buy-info h4{
-	font-size: 15px;
+.buy-info h4 {
+	font-size: 10px;
 	margin: 0 0 0 15px;
 	letter-spacing: 2px;
 }
-.buy-info p{
-	font-size: 20px;
-	margin: 30px 0 30px 15px;
+.buy-info p {
+	font-size: 15px;
+	margin: 20px 0 10px 15px;
 	width: 95%;
 	letter-spacing: 2px;
 }
-.buy-info h2{
-	margin: 10px 0 10px 15px;
-	font-size: 25px;
+.buy-info h2 {
+	margin: 0px 0 10px 15px;
+	font-size: 18px;
 }
-.price-list{
+.price-list {
 	display: flex;
 	margin: 30px 0 0 15px;
 	text-align: center;
 }
-.price-list svg{
-	width: 2.3rem;
+.price-list svg {
+	width: 22px;
+	text-align: center;
+	justify-content: center;
 }
-.price-list input{
+.price-list .plus,
+.minus,
+input {
+	border: 2px solid #e5546d;
+	background: transparent;
+	color: #e5546d;
+}
+.price-list input {
 	width: 2.7rem;
-	height: 2.8rem;
+	height: 1.95rem;
 	position: relative;
-	top: -20%;
+	top: -12%;
 }
-.buying{
-	width: 400px;
-	height: 45px;
+.buying {
+	width: 250px;
+	height: 33px;
 	position: relative;
 	left: 5%;
+	background-color: #e5546d;
+	color: white;
+	border: none;
+	cursor: pointer;
 }
-@media screen and (max-width: 1024px){
-	.buy-info h1{
+@media screen and (max-width: 1024px) {
+	.buy-info h1 {
 		margin: 15px 0 0 15px;
 		font-size: 24px;
 	}
-	.buy-info h4{
+	.buy-info h4 {
 		font-size: 11px;
 		margin: 0 0 0 15px;
 	}
-	.buy-info p{
+	.buy-info p {
 		font-size: 14px;
 		margin: 10px 0 10px 15px;
 	}
-	.buy-info h2{
+	.buy-info h2 {
 		margin: 10px 0 5px 15px;
 		font-size: 16px;
 	}
-	.price-list svg{
+	.price-list svg {
 		width: 1.5rem;
 	}
-	.price-list input{
+	.price-list input {
 		width: 2rem;
 		height: 2.1rem;
 		position: relative;
 		top: -13%;
 	}
-	.buying{
+	.buying {
 		width: 200px;
 		height: 35px;
 		position: relative;
@@ -460,45 +481,45 @@ nav {
 	}
 }
 @media screen and (max-width: 360px) {
-	.one-product{
+	.one-product {
 		left: -50%;
 	}
 }
 @media screen and (max-width: 320px), (max-width: 360px) {
-	.one-product{
+	.one-product {
 		position: relative;
 		top: 58rem;
-		left: -15%;
+		left: -17%;
 	}
-	.one-show{
+	.one-show {
 		flex-direction: column;
-		height: 100vh;
+		height: 75vh;
 	}
-	.one-img img{
-		margin: 80px;
+	.one-img{
+		margin: 20px;
 	}
-	.buy-info h1{
-		font-size: 20px;
+	.buy-info h1 {
+		font-size: 21px;
 	}
-	.buy-info h4{
-		font-size: 8px;
+	.buy-info h4 {
+		font-size: 9px;
 	}
-	.buy-info p{
-		font-size: 10px;
+	.buy-info p {
+		font-size: 11px;
 	}
-	.buy-info h2{
-		font-size: 13px;
+	.buy-info h2 {
+		font-size: 14px;
 	}
-	.price-list svg{
+	.price-list svg {
 		width: 1rem;
 	}
-	.price-list input{
+	.price-list input {
 		width: 1.4rem;
 		height: 1.7rem;
 		position: relative;
 		top: -4%;
 	}
-	.buying{
+	.buying {
 		width: 130px;
 		height: 25px;
 		position: relative;
