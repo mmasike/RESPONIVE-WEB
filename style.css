@@ -240,7 +240,7 @@ nav {
 }
 @media screen and (max-width: 1024px) {
 	.best-selling{
-		height: 85vh;
+		height: 110vh;
 	}
 	.best-selling .collage {
 		grid-template-columns: repeat(3, 1fr);
@@ -361,7 +361,7 @@ nav {
 		margin-top: 0;
 	}
 	.overlay {
-		top: 20.5rem;
+		top: 15.2rem;
 		left: 5%;
 		height: 16vh;
 	}
