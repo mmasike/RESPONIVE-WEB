@@ -65,13 +65,13 @@ nav {
 	background-clip: text;
 }
 .intro-text h2 {
-	font-size: 62px;
+	font-size: 42px;
 	font-weight: 500;
 	color: #e5546d;
 }
 .intro-text p {
 	margin-top: 5px;
-	font-size: 28px;
+	font-size: 23px;
 	color: #585772;
 }
 .cta {
