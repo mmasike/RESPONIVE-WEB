@@ -361,13 +361,14 @@ nav {
 		margin-top: 0;
 	}
 	.overlay {
-		top: 35rem;
+		top: 24rem;
 		left: 5%;
 		height: 16vh;
+		
 	}
 	.overlay h1 {
 		font-size: 17px;
-		margin-bottom: 10px;
+		margin: 25px 0 0 10px;
 		letter-spacing: 1px;
 	}
 	.overlay button {
@@ -490,22 +491,33 @@ input {
 		position: relative;
 		top: 58rem;
 		left: -17%;
+		width: auto;
+		height: 120vh;
+		align-self: center;
 	}
 	.one-show {
 		flex-direction: column;
-		height: 75vh;
+		height: 65vh;
+		width: 80%;
 	}
 	.one-img {
 		margin: 20px;
+		background-size: 10rem;
+	}
+	.buy-info{
+		flex: 2;
 	}
 	.buy-info h1 {
 		font-size: 21px;
+		margin-bottom: 3px;
 	}
 	.buy-info h4 {
 		font-size: 9px;
+		margin-bottom: 25px;
 	}
 	.buy-info p {
 		font-size: 11px;
+		margin-bottom: 15px;
 	}
 	.buy-info h2 {
 		font-size: 14px;
