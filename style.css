@@ -490,10 +490,10 @@ input {
 	.one-product {
 		position: relative;
 		top: 58rem;
-		left: -17%;
+		left: -18%;
 		width: auto;
-		height: 120vh;
-		align-self: center;
+		height: 100vh;
+		justify-content: center;
 	}
 	.one-show {
 		flex-direction: column;
