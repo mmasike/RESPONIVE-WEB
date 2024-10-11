@@ -492,12 +492,12 @@ input {
 		top: 58rem;
 		left: -18%;
 		width: auto;
-		height: 100vh;
+		height: 110vh;
 		justify-content: center;
 	}
 	.one-show {
 		flex-direction: column;
-		height: 65vh;
+		height: 76vh;
 		width: 80%;
 	}
 	.one-img {
