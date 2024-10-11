@@ -613,7 +613,7 @@ footer h1, h2{
 	.foot{
 		position: relative;
 		top: 45rem;
-		height: 65rem;
+		height: 55rem;
 	}
 	.quick{
 		flex-direction: column;
