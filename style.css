@@ -538,3 +538,96 @@ input {
 		left: 5%;
 	}
 }
+/*footer*/
+.quick{
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0 0 75px;
+	border-top: 1px solid #6f6f89;
+}
+.quick-about{
+	flex: 2;
+}
+.quick-about h1{
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+.quick-about p{
+	font-size: 15px;
+	width: 60%;
+	margin: 15px 0 0 0;
+}
+.quick-about .social-links{
+	display: flex;
+	gap: 20px;
+	margin: 20px 0 0 0;
+}
+.quick-links{
+	flex: 1;
+}
+.quick-links h1{
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	margin: 0 0 15px 0;
+}
+.quick-links ul li{
+	list-style: none;
+	padding: 4px 0  0 0;
+}
+.quick-links ul li a{
+	text-decoration: none;
+	color: #494964;
+	font-size: 15px;
+}
+
+.quick-info{
+	flex: 1;
+}
+.quick-info h1{
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+.quick-info ul li{
+	list-style: none;
+	padding: 4px 0  0 0;
+}
+.quick-info ul li a{
+	text-decoration: none;
+	color: #494964;
+	font-size: 15px;
+}
+footer{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 6vh;
+}
+footer h1, h2{
+	font-size: 14px;
+	font-weight: 300;
+}
+@media screen and (max-width: 320px), (max-width: 360px) {
+	.foot{
+		position: relative;
+		top: 45rem;
+		height: 65rem;
+	}
+	.quick{
+		flex-direction: column;
+		gap: 2rem;
+	}
+	.quick-about, .quick-info, .quick-links, h1{
+		font-size: 20px;
+	}
+	.quick-about p{
+		width: 85%;
+		text-wrap: balance;
+	}
+	footer{
+		margin: 20px 0 0 0;
+		flex-direction: column;
+	}
+}
